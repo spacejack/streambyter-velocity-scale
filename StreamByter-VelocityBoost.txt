@@ -1,0 +1,24 @@
+# StreamByter script
+# Velocity Scale
+
+IF LOAD
+  ASS L0 = $100 # multiplier
+  ASS L1 = $60 # divisor
+  math L2 = $100 * L0
+  math L2 = L2 / L1 # percent boost
+  SET LB0 SVelBoost # set labels
+  SET LB1 L2 +D
+END
+
+# Boost velocity
+IF MT == 90
+  IF M2 > 0
+    ASS I0 = M2
+    math I0 = I0 * L0
+    math I0 = I0 / L1
+    IF I0 > 7F # maximum
+      ASS I0 = 7F
+    END
+    ASS M2 = I0
+  END
+END
