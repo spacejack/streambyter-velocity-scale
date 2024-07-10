@@ -3,20 +3,20 @@
 
 IF LOAD
   ASS L0 = $160 # scale %
-  ASS L1 = $100 # divisor
-  SET LB0 SVelBoost # set labels
+  ASS L1 = $127 # max velocity
+  SET LB0 SVelScale # set labels
   SET LB1 L0 +D
 END
 
 # Boost velocity
 IF MT == 90
   IF M2 > 0
-    ASS I0 = M2
+    ASS I0 = M2 # Compute new velocity in I0
     math I0 = I0 * L0
-    math I0 = I0 / L1
-    IF I0 > 7F # maximum
-      ASS I0 = 7F
+    math I0 = I0 / $100
+    IF I0 > L1 # cap to maximum
+      ASS I0 = L1
     END
-    ASS M2 = I0
+    ASS M2 = I0 # Set velocity to computed value
   END
 END

@@ -4,6 +4,6 @@ When using an external MIDI keyboard (fully-weighted digital pianos in particula
 
 This is a simple [StreamByter](https://audeonic.com/streambyter/) stript that applies a multiplier to the velocity from your keyboard, which you can then route to your piano app. Values are capped to the maximum velocity of 127 (7F).
 
-The scaling factor in the script is 160/100 (160%.) You can tune that to your own taste by changing the multiplier value.
+The scaling factor in the script is 160%. You can tune that to your own taste by changing that scale value (L0). Numbers less than 100 will reduce the range of velocity if you prefer to dampen it.
 
 [View the script.](./StreamByter-VelocityBoost.txt)
