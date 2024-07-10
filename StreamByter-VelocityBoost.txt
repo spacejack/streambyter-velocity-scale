@@ -2,12 +2,10 @@
 # Velocity Scale
 
 IF LOAD
-  ASS L0 = $100 # multiplier
-  ASS L1 = $60 # divisor
-  math L2 = $100 * L0
-  math L2 = L2 / L1 # percent boost
+  ASS L0 = $160 # scale %
+  ASS L1 = $100 # divisor
   SET LB0 SVelBoost # set labels
-  SET LB1 L2 +D
+  SET LB1 L0 +D
 END
 
 # Boost velocity
