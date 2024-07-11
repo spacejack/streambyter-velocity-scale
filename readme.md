@@ -10,4 +10,5 @@ The scaling factor in the script is 160%. You can tune that to your own taste by
 
 ### References
 
-[StreamByter script documentation](https://audeonic.boards.net/board/14/university)
+* [StreamByter script documentation](https://audeonic.boards.net/board/14/university)
+* [Other custom scripts](https://audeonic.boards.net/board/12/boutique)
