@@ -7,3 +7,7 @@ This is a simple [StreamByter](https://audeonic.com/streambyter/) stript that ap
 The scaling factor in the script is 160%. You can tune that to your own taste by changing that scale value (L0). Numbers less than 100 will reduce the range of velocity if you prefer to dampen it.
 
 [View the script.](./StreamByter-VelocityBoost.txt)
+
+### References
+
+[StreamByter script documentation](https://audeonic.boards.net/board/14/university)
